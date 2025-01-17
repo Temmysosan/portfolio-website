@@ -1,6 +1,8 @@
 const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector("#menu");
-const hLinks = document.querySelectorAll("#hlink");
+const moon = document.querySelector("#moon");
+const body = document.querySelector("body");
+const hLinks = document.querySelectorAll("#hLink");
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("hidden");
@@ -8,7 +10,7 @@ hamburger.addEventListener("click", () => {
 });
 
 hLinks.forEach((links) => {
-  hamburger.addEventListener("click", () => {
+  links.addEventListener("click", () => {
     menu.classList.toggle("hidden");
     hamburger.classList.toggle("bg-white");
   });

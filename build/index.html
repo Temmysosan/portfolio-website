@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sosan's Portfolio</title>
+  </head>
+
+  <body class="font-nunito">
+    <!-- intro section -->
+    <div>
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-slate-900 z-10 dark:bg-white">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Sosan.</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-500 text-lg">
+              <a href="#about">about me</a>
+            </li>
+            <li class="hover:text-gray-500 text-lg">
+              <a href="#services">services</a>
+            </li>
+            <li class="hover:text-gray-500 text-lg">
+              <a href="#works">works</a>
+            </li>
+            <li class="hover:text-gray-500 text-lg">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            id="moon"
+            src="./img/moon.png"
+            class="hidden md:block w-5 cursor-pointer"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#services">services</a>
+            </li>
+            <li>
+              <a id="hLink" href="#works">works</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+
+      <!-- texts -->
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden">
+            <img src="./img/facePotrait.jpg" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h2 class="text-indigo-600 font-bold">ABOUT ME</h2>
+          <h1 class="font-bold dark:text-white text-2xl">HI, I'M TEMILOLUWA</h1>
+          <h1 class="text-xl font-medium dark:text-white">Better Design</h1>
+          <h1 class="text-xl font-medium dark:text-white">Better Experience</h1>
+          <p class="text-gray-400 text-xl">
+            I design and build digital products. I'm also a multi-disciplinary
+            maker with over 10 years of experiences in wide range of design
+            disciplines.
+          </p>
+
+          <h2 class="text-gray-400 font-medium text-xl">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium text-xl">Javascript</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium text-xl">Tailwind</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <a
+            class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+            href="#contact"
+            >Hire Me</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold text-2xl">SERVICES</h1>
+          <h1 class="text-xl dark:text-white">What do I offer?</h1>
+          <p class="w-1/2 text-center text-gray-400 text-xl">
+            My approach to website design is to create a website that
+            strengthens your company’s brand while ensuring ease of use and
+            simplicity for your audience.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-3xl p-5 my-3 md:my-10 flex flex-col gap-3 transition-all hover:scale-90"
+          >
+            <img class="w-10" src="./img/HTML logo.png" alt="" />
+            <h1 class="font-medium text-xl dark:text-white">HTML</h1>
+            <p class="text-gray-400 text-lg">
+              HyperText Markup Language (HTML) is the basic scripting language
+              used by web browsers to render pages on the World Wide Web.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-3xl p-5 my-3 md:my-10 flex flex-col gap-3 transition-all hover:scale-90"
+          >
+            <img class="w-10" src="./img/css logo.png" alt="" />
+            <h1 class="font-medium text-xl dark:text-white">CSS</h1>
+            <p class="text-gray-400 text-lg">
+              Cascading Style Sheets (CSS) is a stylesheet language used to
+              describe the presentation of a document written in HTML.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-3xl p-5 my-3 md:my-10 flex flex-col gap-3 transition-all hover:scale-90"
+          >
+            <img
+              class="w-10"
+              src="./img/png-transparent-tailwind-css-hd-logo.png"
+              alt=""
+            />
+            <h1 class="font-medium text-xl dark:text-white">TAILWIND</h1>
+            <p class="text-gray-400 text-lg">
+              Tailwind CSS is an open-source CSS framework used for bringing
+              creative ideas to life.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-3xl p-5 my-3 md:my-10 flex flex-col gap-3 transition-all hover:scale-90"
+          >
+            <img class="w-10" src="./img/figma.png" alt="" />
+            <h1 class="font-medium text-xl dark:text-white">FIGMA</h1>
+            <p class="text-gray-400 text-lg">
+              Figma Design is for people to create, share, and test designs for
+              websites, mobile apps, and other digital products and experiences.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-3xl p-5 my-3 md:my-10 flex flex-col gap-3 transition-all hover:scale-90"
+          >
+            <img class="w-10" src="./img/js.png" alt="" />
+            <h1 class="font-medium text-xl dark:text-white">JavaScript</h1>
+            <p class="text-gray-400 text-lg">
+              JavaScript is a scripting or programming language that allows you
+              to implement complex features on web pages
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="w-full md:w-4/12 shadow-xl rounded-3xl p-5 my-3 md:my-10 flex flex-col gap-3 transition-all hover:scale-90"
+          >
+            <img class="w-10" src="./img/react.png" alt="" />
+            <h1 class="font-medium text-xl dark:text-white">REACT</h1>
+            <p class="text-gray-400 text-lg">
+              React specializes in creating interactive websites using a
+              Javascript based development library.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- works -->
+    <div id="works" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold text-2xl">PORTFOLIO</h1>
+          <h1 class="dark:text-white text-xl">Works & Projects</h1>
+          <p class="w-1/2 text-center text-gray-400 text-lg">
+            I work with Giddaa to help bring creative ideas to life. Powered by
+            Figma, VS Code and coffee, We turn your specificity into a
+            well-designed websites.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+            class="my-3 flex w-full flex-col gap-3 rounded-3xl p-5 shadow-xl transition-all hover:scale-90 md:my-10 md:w-4/12"
+          >
+            <img src="./img/project-1.png" />
+            <h1 class="text-xl font-medium dark:text-white">
+              Social Media Website
+            </h1>
+            <p class="text-gray-400 text-lg">
+              Better and much more effective communication around the clock
+              using the TalkMore App.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="my-3 flex w-full flex-col gap-3 rounded-3xl p-5 shadow-xl transition-all hover:scale-90 md:my-10 md:w-4/12"
+          >
+            <img src="./img/project-2.png" />
+            <h1 class="text-xl font-medium dark:text-white">Reminders App.</h1>
+            <p class="text-gray-400 text-lg">
+              Intricate platform designed to keep you up to schedule throughout
+              your day.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="my-3 flex w-full flex-col gap-3 rounded-3xl p-5 shadow-xl transition-all hover:scale-90 md:my-10 md:w-4/12"
+          >
+            <img src="./img/project-3.png" />
+            <h1 class="text-xl font-medium dark:text-white">
+              Food Delivery App
+            </h1>
+            <p class="text-gray-400 text-lg">
+              Fast food platform designed to get your food to you wherever you
+              go.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold text-2xl">CONTACT</h1>
+          <h1 class="text-xl dark:text-white">Have a Question?</h1>
+          <p class="w-1/2 text-center text-gray-400 text-lg">
+            Do you have an idea? Let's discuss it and see what we can do
+            together.
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white text-lg"
+            type="text"
+            placeholder="Fullname"
+          />
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white text-lg"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white text-lg"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+          <button
+            class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer text-xl"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Sosan.</span>
+        </div>
+        <span class="hidden md:block font-medium text-white text-lg">
+          Portfolio of Temiloluwa Sosan.
+        </span>
+        <div class="flex gap-3">
+          <a href="https://github.com/Temmysosan" target="_blank"
+            ><img
+              class="w-10 h-10 cursor-pointer"
+              src="./img/github.png"
+              alt=""
+          /></a>
+          <a href="https://www.instagram.com/temmysosan" target="_blank"
+            ><img
+              class="w-10 h-10 cursor-pointer"
+              src="./img/instagram.png"
+              alt=""
+          /></a>
+          <a href="https://twitter.com/temmysosan" target="_blank"
+            ><img
+              class="w-10 h-10 cursor-pointer"
+              src="./img/twitter.png"
+              alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/temiloluwa-sosan-41666025b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKZvWxpEOQyC3RToK8EEyoQ%3D%3D"
+            target="_blank"
+            ><img
+              class="w-10 h-10 cursor-pointer"
+              src="./img/linkedin.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
